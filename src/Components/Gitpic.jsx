@@ -19,7 +19,7 @@ export default function Gitpic() {
   async function getOrg() {
     const resp = await fetch(APIURL + username + "/orgs");
     const respData = await resp.json();
-    setOrg(respData?respData:[]);
+    setOrg(Array.isArray(respData)?respData:[]);
   }
   const {
     name,
@@ -78,7 +78,7 @@ export default function Gitpic() {
             <p>{bio}</p>
             <h5>Part of:</h5>
             <div id="orgs" className="orgs">
-              <Org organisations={org} />
+              {org.length>0?<Org organisations={org} />:<p>not part of any organisation</p>}
             </div>
           </div>
         </div>
