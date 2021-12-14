@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import html2canvas from "html2canvas";
 import "./Gitpic.scss";
 import Org from "./Org";
 export default function Gitpic() {
@@ -10,7 +11,43 @@ export default function Gitpic() {
   useEffect(() => {
     getUserData();
     getOrg();
+    setUpDownloadPageAsImage();
   }, []); //eslint-disable-line
+  
+
+function setUpDownloadPageAsImage() {
+  const el = document.getElementById("download-page-as-image");
+  el.addEventListener("click", function() {
+    html2canvas(document.body).then(function(canvas) {
+      console.log(canvas);
+      simulateDownloadImageClick(canvas.toDataURL(), 'file-name.png');
+    });
+  });
+}
+
+function simulateDownloadImageClick(uri, filename) {
+  var link = document.createElement('a');
+  if (typeof link.download !== 'string') {
+    window.open(uri);
+  } else {
+    link.href = uri;
+    link.download = filename;
+    accountForFirefox(clickLink, link);
+  }
+}
+
+function clickLink(link) {
+  link.click();
+}
+
+function accountForFirefox(click) { // wrapper function
+  let link = arguments[1];
+  document.body.appendChild(link);
+  click(link);
+  document.body.removeChild(link);
+}
+
+// fetching from api
   async function getUserData() {
     const resp = await fetch(APIURL + username);
     const respData = await resp.json();
@@ -51,10 +88,10 @@ export default function Gitpic() {
             setUsername(e.target.value);
           }}
         />
-        <button className="button">generate</button>
+        <button className="button">Generate</button>
       </form>
       <main id="main">
-        <div className="card">
+        <div className="card" id="content">
           <div className="align">
             <a href={html_url}>
               <img src={avatar_url} alt="" />
@@ -84,6 +121,7 @@ export default function Gitpic() {
             </div>
           </div>
         </div>
+        <button id="download-page-as-image">Download Page as Image</button>
       </main>
     </div>
   );

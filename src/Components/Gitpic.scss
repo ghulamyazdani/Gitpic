@@ -87,6 +87,12 @@ h5{
     border-radius: 100%;
     
 }
+#main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
 /* display:inline-block;
     font-size :0.9rem;
     white-space:nowrap;
