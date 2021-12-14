@@ -12,6 +12,14 @@
     border:solid white;  
     margin:2rem 2rem 0 2rem;  
 }
+h1{
+    font-family: 'Ribeye Marrow', cursive;
+    text-align: center;
+    font-size: 4.5rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
 input{
     font-size: 1.2rem;
     padding:0.7rem;
@@ -88,6 +96,7 @@ h5{
     width: 75px; */
     #form{
         text-align:center;
+        margin-top:-10rem;
     }
     .info-container{
         padding: 1rem;
