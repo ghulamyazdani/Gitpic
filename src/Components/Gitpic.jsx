@@ -4,22 +4,22 @@ import Org from "./Org";
 export default function Gitpic() {
   const APIURL = "https://api.github.com/users/";
   const [username, setUsername] = useState("ghulamyazdani");
-  const [data, setData] = useState({});
-  const [org, setOrg] = useState({});
+  const [data, setData] = useState([]);
+  const [org, setOrg] = useState([]);
 
   useEffect(() => {
     getUserData();
     getOrg();
-  }, []);
+  }, []); //eslint-disable-line
   async function getUserData() {
     const resp = await fetch(APIURL + username);
     const respData = await resp.json();
-    setData(respData);
+    setData(respData?respData:[]);
   }
   async function getOrg() {
     const resp = await fetch(APIURL + username + "/orgs");
     const respData = await resp.json();
-    setOrg(respData);
+    setOrg(respData?respData:[]);
   }
   const {
     name,
