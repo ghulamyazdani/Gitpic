@@ -1,0 +1,88 @@
+.card{
+    background-color: #292C6D;
+    border-radius:7px;
+    width:45rem;
+    display: flex;
+    margin:2rem;
+    box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0,0,0, 0.22);
+}
+.card .align img{
+    border-radius: 100%;
+    width:12rem;
+    border:solid white;  
+    margin:2rem 2rem 0 2rem;  
+}
+input{
+    font-size: 1.2rem;
+    padding:0.7rem;
+    border-radius: 10px; 
+    font-family: inherit; 
+    border:black;
+    width:15rem;
+    box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0,0,0, 0.22);
+    margin-top: 10rem;
+}
+
+
+.follow-stats{
+ display: flex;
+ justify-content:space-evenly;
+ font-size: 1rem;
+ flex-flow: column wrap;
+}
+.content{
+    padding: 1rem;
+}
+p{
+    font-size:1.2rem;
+    font-weight:normal;
+}
+
+.align{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+h3{
+    margin: 0;
+    margin-top: 2rem;
+}
+b {
+    margin-left: 0.5rem;
+}
+h5{
+    margin: 0;
+}
+.orgs{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top:1rem;
+}
+.org span{
+    margin:0;
+    font-size:0.8rem;
+    width: 70px;  
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+     
+}
+.org{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+.org img{
+    width: 60px;
+    border-radius: 100%;
+    
+}
+/* display:inline-block;
+    font-size :0.9rem;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    width: 75px; */

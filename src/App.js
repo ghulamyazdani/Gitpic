@@ -1,10 +1,8 @@
-import Gitpic from "./Components/Gitpic"
-import './App.scss';
+import Gitpic from "./Components/Gitpic";
+import "./App.scss";
 
 function App() {
-  return (
-   <Gitpic/>
-  );
+  return <Gitpic />;
 }
 
 export default App;
