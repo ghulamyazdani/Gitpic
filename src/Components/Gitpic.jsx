@@ -73,7 +73,7 @@ export default function Gitpic() {
               </span>
             </div>
           </div>
-          <div>
+          <div className="info-container">
             <h3>{name}</h3>
             <p>{bio}</p>
             <h5>Part of:</h5>
