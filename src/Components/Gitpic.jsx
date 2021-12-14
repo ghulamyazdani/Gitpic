@@ -17,8 +17,9 @@ export default function Gitpic() {
 
 function setUpDownloadPageAsImage() {
   const el = document.getElementById("download-page-as-image");
+  const capture = document.getElementById("capture");
   el.addEventListener("click", function() {
-    html2canvas(document.body).then(function(canvas) {
+    html2canvas(capture).then(function(canvas) {
       console.log(canvas);
       simulateDownloadImageClick(canvas.toDataURL(), 'file-name.png');
     });
@@ -91,7 +92,7 @@ function accountForFirefox(click) { // wrapper function
         <button className="button">Generate</button>
       </form>
       <main id="main">
-        <div className="card" id="content">
+        <div className="card" id="capture">
           <div className="align">
             <a href={html_url}>
               <img src={avatar_url} alt="" />
