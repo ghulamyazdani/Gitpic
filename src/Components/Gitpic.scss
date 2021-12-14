@@ -94,11 +94,32 @@ h5{
     text-overflow: ellipsis;
     width: 75px; */
     #form{
-        text-align:center;
-        margin-top:-10rem;
+        text-align: center;
+        display: grid;
+        margin-top: -10rem;
+        justify-items: center;
+        justify-content: center;
+        
     }
     .info-container{
         padding: 1rem;
+    }
+    button{
+        background-color: #292C6D;
+        border-radius: 7px;
+        font-size: 1rem;
+        padding: 0.5rem;
+        border:none;
+        color: white;
+        font-family: inherit;
+        box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0,0,0, 0.22);
+        margin-top: 1rem;
+        cursor: pointer;
+        
+    }
+    button:hover{
+        background-color: #fff;
+        color: black;
     }
 
     @media (max-width: 991px){
@@ -113,6 +134,10 @@ h5{
         h5 ,h3 ,p{
             
             text-align: center;
+        }
+        .info-container{
+            padding: 1rem;
+            margin-top: -4rem;
         }
         
       }

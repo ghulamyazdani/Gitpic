@@ -51,6 +51,7 @@ export default function Gitpic() {
             setUsername(e.target.value);
           }}
         />
+        <button className="button">generate</button>
       </form>
       <main id="main">
         <div className="card">
