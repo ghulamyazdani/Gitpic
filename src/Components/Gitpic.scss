@@ -1,11 +1,4 @@
-.card{
-    background-color: #292C6D;
-    border-radius:7px;
-    width:45rem;
-    display: flex;
-    margin:2rem;
-    box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0,0,0, 0.22);
-}
+
 .card .align img{
     border-radius: 100%;
     width:12rem;
@@ -49,8 +42,11 @@ p{
 .align{
     justify-content: center;
     align-items: center;
+    display: flex;
     text-align: center;
     padding: 1.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 h3{
     margin: 0;
@@ -65,7 +61,10 @@ h5{
 .orgs{
     display: flex;
     flex-flow: row wrap;
-    margin-top:1rem;
+    margin-top: 1rem;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
 }
 .org span{
     margin:0;
@@ -101,3 +100,19 @@ h5{
     .info-container{
         padding: 1rem;
     }
+
+    @media (max-width: 991px){
+        .orgs{
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: 1rem;
+            align-items: center;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+        h5 ,h3 ,p{
+            
+            text-align: center;
+        }
+        
+      }

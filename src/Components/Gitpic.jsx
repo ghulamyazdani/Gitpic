@@ -34,7 +34,7 @@ export default function Gitpic() {
 
   return (
     <div>
-      <h1><i class="fab fa-git"></i><i class="fas fa-images"></i> </h1>
+      <h1><i className="fab fa-git"></i><i className="fas fa-images"></i> </h1>
       <form
         id="form"
         onSubmit={(e) => {
