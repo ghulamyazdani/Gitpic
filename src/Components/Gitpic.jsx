@@ -155,5 +155,6 @@ export default function Gitpic() {
         Download Page as Image
       </button>
     </div>
+    
   );
 }
