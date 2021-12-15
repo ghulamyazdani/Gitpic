@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="created-by">
         created by{" "}
         <a
-          href="https://github.com/ghulamyazdani/Gitpic/blob/master/LICENSE"
+          href="https://twitter.com/iamyazreza"
           target="blank"
         >
           <b>@ghulamyazdani</b>
