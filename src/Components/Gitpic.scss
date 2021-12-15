@@ -58,6 +58,7 @@ b {
 h5{
     margin: 0;
 }
+
 .orgs{
     display: flex;
     flex-flow: row wrap;
@@ -135,7 +136,13 @@ h5{
         flex-direction: column;
         align-items: center;
     }
-    
+    .Get-yours{
+        margin-top: -1rem;
+        text-align: center;
+    }
+    .hide{
+        display: none;
+    }
 
     @media (max-width: 991px){
         .orgs{

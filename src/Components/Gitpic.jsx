@@ -48,6 +48,7 @@ export default function Gitpic() {
   //   document.body.removeChild(link);
   // }
   function shot() {
+    document.querySelector(".Get-yours").classList.toggle('hide');
     domtoimage
       .toJpeg(document.getElementById("capture"), { quality: 0.95 })
       .then(function (dataUrl) {
@@ -56,6 +57,8 @@ export default function Gitpic() {
         link.href = dataUrl;
         link.click();
       });
+      
+      setTimeout(function() {document.querySelector(".Get-yours").classList.toggle('hide');},2000)
   }
 
   // fetching from api
@@ -96,7 +99,7 @@ export default function Gitpic() {
       >
         <input
           type="text"
-          placeholder="Enter username"
+          placeholder="Enter github username"
           id="search"
           onChange={(e) => {
             setUsername(e.target.value);
@@ -140,17 +143,17 @@ export default function Gitpic() {
               </div>
             </div>
           </div>
-         
         </main>
+        <p className="hide Get-yours">Get yours Gitpic on gitpic.vercel.app</p>
       </div>
       <button
-            onClick={() => {
-              shot();
-            }}
-            id="download-page-as-image"
-          >
-            Download Page as Image
-          </button>
+        onClick={() => {
+          shot();
+        }}
+        id="download-page-as-image"
+      >
+        Download Page as Image
+      </button>
     </div>
   );
 }
