@@ -48,7 +48,7 @@ export default function Gitpic() {
   //   document.body.removeChild(link);
   // }
   function shot() {
-    document.querySelector(".Get-yours").classList.toggle('hide');
+    document.querySelector(".Get-yours").classList.toggle("hide");
     domtoimage
       .toJpeg(document.getElementById("capture"), { quality: 0.95 })
       .then(function (dataUrl) {
@@ -57,8 +57,10 @@ export default function Gitpic() {
         link.href = dataUrl;
         link.click();
       });
-      
-      setTimeout(function() {document.querySelector(".Get-yours").classList.toggle('hide');},2000)
+
+    setTimeout(function () {
+      document.querySelector(".Get-yours").classList.toggle("hide");
+    }, 2000);
   }
 
   // fetching from api
@@ -155,6 +157,5 @@ export default function Gitpic() {
         Download Page as Image
       </button>
     </div>
-    
   );
 }

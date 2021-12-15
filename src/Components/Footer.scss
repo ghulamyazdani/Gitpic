@@ -1,4 +1,41 @@
 footer{
-    background-color: #292C6D;
     width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: inherit;
+    .foot{
+        display:flex;
+        gap: 2rem;
+        text-align: center;
+        justify-content: center;
+        align-items: baseline;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+    span{
+        font-size: 1rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        
+    }
+    span:hover{
+          cursor: pointer;  
+        text-decoration: underline;
+    }
+    .created-by{
+        font-size: 1rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+    b{
+        color:yellow;
+        cursor: pointer;
+    }
+    b:hover{
+        cursor: pointer;  
+      text-decoration: underline;
+  }
+    
 }
