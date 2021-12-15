@@ -154,7 +154,7 @@ export default function Gitpic() {
         }}
         id="download-page-as-image"
       >
-        Download Page as Image
+        Download Your Gitpic
       </button>
     </div>
   );
