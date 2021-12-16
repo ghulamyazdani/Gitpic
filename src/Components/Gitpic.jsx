@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import html2canvas from "html2canvas";
 import domtoimage from "dom-to-image";
 import "./Gitpic.scss";
 import Org from "./Org";
@@ -12,48 +11,15 @@ export default function Gitpic() {
   useEffect(() => {
     getUserData();
     getOrg();
-    // setUpDownloadPageAsImage();
   }, []); //eslint-disable-line
 
-  // function setUpDownloadPageAsImage() {
-  //   const el = document.getElementById("download-page-as-image");
-  //   const capture = document.getElementById("capture");
-  //   el.addEventListener("click", function() {
-  //     html2canvas(capture).then(function(canvas) {
-  //       console.log(canvas);
-  //       simulateDownloadImageClick(canvas.toDataURL(), 'file-name.png');
-  //     });
-  //   });
-  // }
-
-  // function simulateDownloadImageClick(uri, filename) {
-  //   var link = document.createElement('a');
-  //   if (typeof link.download !== 'string') {
-  //     window.open(uri);
-  //   } else {
-  //     link.href = uri;
-  //     link.download = filename;
-  //     accountForFirefox(clickLink, link);
-  //   }
-  // }
-
-  // function clickLink(link) {
-  //   link.click();
-  // }
-
-  // function accountForFirefox(click) { // wrapper function
-  //   let link = arguments[1];
-  //   document.body.appendChild(link);
-  //   click(link);
-  //   document.body.removeChild(link);
-  // }
   function shot() {
     document.querySelector(".Get-yours").classList.toggle("hide");
     domtoimage
-      .toJpeg(document.getElementById("capture"), { quality: 0.95 })
+      .toJpeg(document.getElementById("capture"), { quality: 1 })
       .then(function (dataUrl) {
         var link = document.createElement("a");
-        link.download = "my-image-name.Jpeg";
+        link.download = `Gitpic(${name}).Jpeg`;
         link.href = dataUrl;
         link.click();
       });
