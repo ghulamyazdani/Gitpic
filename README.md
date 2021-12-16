@@ -1,4 +1,4 @@
-[![Banner](https://github.com/ghulamyazdani/Gitpic/blob/master/Assets/poster.png)](https://24pullrequests.com/events/43)
+[![Banner](https://github.com/ghulamyazdani/Gitpic/blob/master/Assets/poster.png)](https://github.com/ghulamyazdani/Gitpic)
 
 <div align="center">
 <a href="https://github.com/ghulamyazdani/Gitpic"><img alt="Opensource" title="Website" src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"/></a>
