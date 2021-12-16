@@ -146,7 +146,7 @@ export default function Gitpic() {
             </div>
           </div>
         </main>
-        <p className="hide Get-yours">Get yours Gitpic on gitpic.vercel.app</p>
+        <p className="hide Get-yours">Get yours Gitpic at gitpic.vercel.app</p>
       </div>
       <button
         onClick={() => {
