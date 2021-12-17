@@ -42,7 +42,7 @@ Follow the steps given in contributing.md in order to contribute to this project
 ├───package.json
 ```
 
-<h1 > 👨‍💻 Project Admin </h1>
+## 👨‍💻 Project Admin
 
   <div align="center">
 <table>
