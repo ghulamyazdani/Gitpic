@@ -10,6 +10,7 @@
 ## 🌟 About
 
 This is the web app which will generate a compact github profile banner for you when you put on your username in the input section.You can also download that generated poster by clicking on the button underneath...,you can showcase those downloaded poster on your socials
+Also you can use it as your e-card of your git projects.
 
 ## 🧰 Setup
 
