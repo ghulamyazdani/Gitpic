@@ -23,7 +23,7 @@ This is the web app which will generate a compact github profile banner for you 
 - Downlaod the latest version of **npm**.
 - Downloading **Eslint** and **prettier** will be plus.
 
-## 🧑‍🤝‍🧑 How to contribute
+## 🧑‍🤝‍🧑 How to contribute ?
 
 Follow the steps given in contributing.md in order to contribute to this project.
 
