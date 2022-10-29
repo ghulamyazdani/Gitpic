@@ -9,10 +9,11 @@
 
 ## 🌟 About
 
-This is the web app which will generate a compact github profile banner for you when you put on your username in the input section. You can also download that generated poster by clicking on the button underneath.., you can showcase those downloaded poster on your socials.
+This is the web app which will generate a compact github profile banner for you when you put on your username in the input section.You can also download that generated poster by clicking on the button underneath...,you can showcase those downloaded poster on your socials
+Also you can use it as your e-card of your git 
 
 ## 🧰 Setup
-
+ steps
 - By forking, clone the repository in your local system.
 - Run `npm install` in Terminal it will Install all the dependencies which is required for this project.
 - Run `npm start` To run the website on your local repository.
@@ -23,7 +24,7 @@ This is the web app which will generate a compact github profile banner for you 
 - Downlaod the latest version of **npm**.
 - Downloading **Eslint** and **prettier** will be plus.
 
-## 🧑‍🤝‍🧑 How to contribute
+## 🧑‍🤝‍🧑 How to contribute ?
 
 Follow the steps given in contributing.md in order to contribute to this project.
 
