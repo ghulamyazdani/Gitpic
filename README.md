@@ -9,7 +9,7 @@
 
 ## 🌟 About
 
-This is the web app which will generate a compact github profile banner for you when you put on your username in the input section.You can also download that generated poster by clicking on the button underneath...,you can showcase those downloaded poster on your socials
+This is the web app which will generate a compact github profile banner for you when you put on your username in the input section. You can also download that generated poster by clicking on the button underneath.., you can showcase those downloaded poster on your socials.
 
 ## 🧰 Setup
 
@@ -48,7 +48,7 @@ Follow the steps given in contributing.md in order to contribute to this project
 <table>
 <tr>
 
-<td align="center"><a href="https://github.com/ghulamyazdani"><img src="https://avatars.githubusercontent.com/u/55938346?v=4" width=150px height=150px /></a></br> <h4 style="color:white;">Ghulamyazdani</h4>
+<td align="center"><a href="https://github.com/ghulamyazdani"><img src="https://avatars.githubusercontent.com/u/55938346?v=4" width=150px height=150px /></a></br> <h4 style="color:white;">GhulamYazdani</h4>
 
 </tr>
 </table>
