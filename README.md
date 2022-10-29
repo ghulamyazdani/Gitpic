@@ -49,7 +49,7 @@ Follow the steps given in contributing.md in order to contribute to this project
 <table>
 <tr>
 
-<td align="center"><a href="https://github.com/ghulamyazdani"><img src="https://avatars.githubusercontent.com/u/55938346?v=4" width=150px height=150px /></a></br> <h4 style="color:white;">Ghulamyazdani</h4>
+<td align="center"><a href="https://github.com/ghulamyazdani"><img src="https://avatars.githubusercontent.com/u/55938346?v=4" width=150px height=150px /></a></br> <h4 style="color:white;">GhulamYazdani</h4>
 
 </tr>
 </table>
