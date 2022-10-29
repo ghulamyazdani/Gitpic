@@ -24,7 +24,7 @@ Also you can use it as your e-card of your git
 - Downlaod the latest version of **npm**.
 - Downloading **Eslint** and **prettier** will be plus.
 
-## 🧑‍🤝‍🧑 How to contribute
+## 🧑‍🤝‍🧑 How to contribute ?
 
 Follow the steps given in contributing.md in order to contribute to this project.
 
