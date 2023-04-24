@@ -99,7 +99,9 @@ export default function Gitpic() {
               </div>
             </div>
             <div className="info-container">
+              <div className="account-name">
               <h3>{name}</h3>
+             </div>
               <p>{bio}</p>
               <h5>Part of:</h5>
               <div id="orgs" className="orgs">

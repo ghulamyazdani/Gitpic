@@ -144,6 +144,34 @@ h5{
         display: none;
     }
 
+    .info-container h3{
+        position: relative;
+        font-size: 1em;
+    }
+    .info-container h3::before{
+    content: "";
+    position: absolute;
+    width: 87%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #292C6D;
+    border-left:2px solid  rgb(0, 0, 0) ;
+    animation: moving 4s steps(12) infinite;
+    }
+
+   @keyframes moving{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left:0%;
+    }
+   }
+   .account-name{
+    width: 55%;
+   }
+
     @media (max-width: 991px){
         .orgs{
             display: flex;
